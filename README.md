@@ -13,7 +13,7 @@
 
 ```bash
 npm install
-npm run dev      # 启动开发服务器 http://localhost:5173
+npm run dev      # 启动开发服务器 
 npm run build    # 生产构建到 dist/
 npm run preview  # 预览构建产物
 ```
