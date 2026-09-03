@@ -1,32 +1,28 @@
-# React + TypeScript + Vite
+# AIone · 极客风个人主页
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+简约、高格调、极客风格的个人网站，项目名 **AIone**。
 
-Currently, two official plugins are available:
+## 技术栈
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React 19 + TypeScript
+- Vite 8
+- Tailwind CSS 4
+- Oxlint
 
-## React Compiler
+## 本地开发
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```bash
+npm install
+npm run dev      # 启动开发服务器 http://localhost:5173
+npm run build    # 生产构建到 dist/
+npm run preview  # 预览构建产物
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## 部署
+
+推送到 `main` 分支后，GitHub Actions 会自动构建并部署到 GitHub Pages。
+
+## 联系方式
+
+- 邮箱：rick1639@yeah.net
+- GitHub：[gh1616](https://github.com/gh1616)
